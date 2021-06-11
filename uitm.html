@@ -1,0 +1,837 @@
+<html>
+<head><link rel="shortcut icon" href="Image/icon_.ico" />
+<body>
+<a name="top"></a>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0;font-family:Times New Roman}
+
+.topnav {
+  overflow: hidden;
+  background-color: #02000A;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #E17E76;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F99A9C;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #E8CCC0;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #AB6393;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+<script language='JavaScript'>var txt="Welcome to Zafira’s Personal Website - ";var kecepatan=70;var segarkan=null;function bergerak() { document.title=txt;txt=txt.substring(1,txt.length)+txt.charAt(0);
+segarkan=setTimeout("bergerak()",kecepatan);}bergerak();</script>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" target="_blank" >Home</a>
+  <a href="biodata.html" target="_blank" >Biodata</a>
+  <a href="experience.html" target="_blank" >Experience</a>
+  <a href="family.html" target="_blank" >Family</a>
+  <div class="dropdown">
+    <button class="dropbtn">Education
+      <a href="education.html"></a>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="kindergarten.html" target="_blank" >Kindergarden</a>
+      <a href="primary.html" target="_blank" >Primary school</a>
+      <a href="secondary.html" target="_blank" >Secondary school</a>
+      <a href="university.html" target="_blank" >University</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Gallery
+      <a href="gallery.html"></a>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="raya.html" target="raya.html" > Raya 2021 </a>
+      <a href="food.html" target="food.html" > Food </a>
+      <a href="kpop.html" target="kpop.html" > Kpop </a>
+      <a href="uitm.html" target="uitm.html" > UiTM Kedah </a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Others
+      <a href="others.html"></a>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="kpop.html" target="kpop.html" > Kpop </a>
+      <a href="kdrama.html" target="kdrama.html" > Fav Kdrama </a>
+      
+      
+    </div>
+  </div> 
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
+<br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/6 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+<center><div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="Image/photoslider.png" style="width:75%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Image/photoslider2.png" style="width:75%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Image/photoslider3.png" style="width:75%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Image/photoslider4.png" style="width:75%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Image/photoslider5.png" style="width:75%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Image/photoslider6.png" style="width:75%">
+</div>
+
+</div></center>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 60 seconds
+}
+</script>
+<br>
+<html>
+<head>
+<script language='JavaScript'>var txt="Welcome to Zafira’s Personal Website - ";var kecepatan=70;var segarkan=null;function bergerak() { document.title=txt;txt=txt.substring(1,txt.length)+txt.charAt(0);
+segarkan=setTimeout("bergerak()",kecepatan);}bergerak();</script>
+</head>
+<body background="Image/grid.jpg">
+<br>
+<style type="text/css">
+body{cursor: url("https://lh5.googleusercontent.com/-e8CojMbI-PU/ThqQXIPy9WI/AAAAAAAADH8/RRa8eHUkdXk/cursor2.gif"), auto;}
+</style>
+<br>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  background: #E69288;
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9C8ADE; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #957DAD; 
+}
+</style>
+</head>   
+
+<body>
+<br>
+<script type="text/javascript" src="http://www.yourjavascript.com/14104214083/snow-white.js"></script>
+<br>
+<script type='text/javascript'>
+
+
+</script>
+
+
+<script type='text/javascript'>
+// <![CDATA[
+var colour="#FF00E1";
+var sparkles=100;
+
+
+var x=ox=400;
+var y=oy=300;
+var swide=800;
+var shigh=600;
+var sleft=sdown=0;
+var tiny=new Array();
+var star=new Array();
+var starv=new Array();
+var starx=new Array();
+var stary=new Array();
+var tinyx=new Array();
+var tinyy=new Array();
+var tinyv=new Array();
+window.onload=function() { if (document.getElementById) {
+var i, rats, rlef, rdow;
+for (var i=0; i<sparkles; i++) {
+var rats=createDiv(3, 3);
+rats.style.visibility="hidden";
+document.body.appendChild(tiny[i]=rats);
+starv[i]=0;
+tinyv[i]=0;
+var rats=createDiv(5, 5);
+rats.style.backgroundColor="transparent";
+rats.style.visibility="hidden";
+var rlef=createDiv(1, 5);
+var rdow=createDiv(5, 1);
+rats.appendChild(rlef);
+rats.appendChild(rdow);
+rlef.style.top="3px";
+rlef.style.left="0px";
+rdow.style.top="0px";
+rdow.style.left="3px";
+document.body.appendChild(star[i]=rats);
+}
+set_width();
+sparkle();
+}}
+function sparkle() {
+var c;
+if (x!=ox || y!=oy) {
+ox=x;
+oy=y;
+for (c=0; c<sparkles; c++) if (!starv[c]) {
+star[c].style.left=(starx[c]=x)+"px";
+
+
+star[c].style.top=(stary[c]=y)+"px";
+star[c].style.clip="rect(0px, 5px, 5px, 0px)";
+star[c].style.visibility="visible";
+starv[c]=50;
+break;
+}
+}
+for (c=0; c<sparkles; c++) {
+if (starv[c]) update_star(c);
+if (tinyv[c]) update_tiny(c);
+}
+setTimeout("sparkle()", 40);
+}
+function update_star(i) {
+if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
+if (starv[i]) {
+stary[i]+=1+Math.random()*3;
+if (stary[i]<shigh+sdown) {
+star[i].style.top=stary[i]+"px";
+starx[i]+=(i%5-2)/5;
+star[i].style.left=starx[i]+"px";
+}
+else {
+star[i].style.visibility="hidden";
+starv[i]=0;
+return;
+}
+
+
+}
+else {
+tinyv[i]=50;
+tiny[i].style.top=(tinyy[i]=stary[i])+"px";
+tiny[i].style.left=(tinyx[i]=starx[i])+"px";
+tiny[i].style.width="2px";
+tiny[i].style.height="2px";
+star[i].style.visibility="hidden";
+tiny[i].style.visibility="visible"
+}
+}
+function update_tiny(i) {
+if (--tinyv[i]==25) {
+tiny[i].style.width="1px";
+tiny[i].style.height="1px";
+}
+if (tinyv[i]) {
+tinyy[i]+=1+Math.random()*3;
+if (tinyy[i]<shigh+sdown) {
+tiny[i].style.top=tinyy[i]+"px";
+tinyx[i]+=(i%5-2)/5;
+tiny[i].style.left=tinyx[i]+"px";
+}
+else {
+
+
+
+
+tiny[i].style.visibility="hidden";
+tinyv[i]=0;
+return;
+}
+}
+else tiny[i].style.visibility="hidden";
+}
+document.onmousemove=mouse;
+function mouse(e) {
+set_scroll();
+y=(e)?e.pageY:event.y+sdown;
+x=(e)?e.pageX:event.x+sleft;
+}
+function set_scroll() {
+if (typeof(self.pageYOffset)=="number") {
+sdown=self.pageYOffset;
+sleft=self.pageXOffset;
+}
+else if (document.body.scrollTop || document.body.scrollLeft) {
+sdown=document.body.scrollTop;
+sleft=document.body.scrollLeft;
+}
+else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+sleft=document.documentElement.scrollLeft;
+sdown=document.documentElement.scrollTop;
+}
+else {
+sdown=0;
+sleft=0;
+}
+}
+window.onresize=set_width;
+function set_width() {
+if (typeof(self.innerWidth)=="number") {
+swide=self.innerWidth;
+shigh=self.innerHeight;
+}
+else if (document.documentElement && document.documentElement.clientWidth) {
+swide=document.documentElement.clientWidth;
+shigh=document.documentElement.clientHeight;
+}
+else if (document.body.clientWidth) {
+swide=document.body.clientWidth;
+shigh=document.body.clientHeight;
+}
+}
+function createDiv(height, width) {
+var div=document.createElement("div");
+div.style.position="absolute";
+div.style.height=height+"px";
+div.style.width=width+"px";
+div.style.overflow="hidden";
+div.style.backgroundColor=colour;
+return (div);
+}
+// ]]>
+</script>
+<marquee style="border:#AB6393 3px SOLID" <b><font color="black"</b><font face="Lucida Sans Typewriter"><font size="30"> Welcome To Zafira's Personal Website </font></marquee>
+<center><img src="Image/logo2.png"></center>
+<h2 style="background-color:#E18D96"><center><b><i><font face="Times New Roman" font size="15"> UiTM Kedah scenery </b></i></font></center></h2>
+<div style="background-image: url('https://static.vecteezy.com/system/resources/previews/001/218/846/non_2x/background-wallpaper-with-polygons-in-gradient-color-vector.jpg');">
+<br>
+<center><img src="Animation/uitm2.gif"></center>
+<br>
+<style>
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #AB6393;
+  padding: 10px;
+  border-style: dashed;
+}
+</style>
+</head>
+<body>
+<center><p> <i style="font-size:24px" class="fa">&#xf1f9;</i> All these pictures were taken by me. </center></p>
+<br>
+<center><i><p><i style="font-size:24px" class="fa">&#xf19d;</i> Will be remained as sweet memories for my diploma studies. 
+<br>
+<b> #MissUiTMKedah #UiTMKedahDiHatiku </b><i style="font-size:24px" class="fa">&#xf19d;</i></center></i></p>
+<br>
+<center><p> p/s: move your cursor over the image </center></p>
+<div class="center">
+  <style>
+img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+</style>
+  <center><img src="Image/uitm1.jpg" width="40%" height"40%" border="3" ></center>
+<br>
+  <center><img src="Image/uitm3.jpg" width="40%" height"40%" border="3" ></center>
+<br>
+  <center><img src="Image/uitm4.jpg" width="40%" height"40%" border="3" ></center>
+<br>
+  <center><img src="Image/uitm5.jpg" width="40%" height"40%" border="3" ></center>
+<br>
+  <center><img src="Image/uitm6.jpg" width="40%" height"40%" border="3" ></center>
+<br>
+  <center><img src="Image/uitm7.jpg" width="40%" height"40%" border="3" ></center>
+<br>
+  <center><img src="Image/uitm8.jpg" width="40%" height"40%" border="3" ></center>
+<br>
+</div>
+<br>
+</div>
+<br>
+</body>
+</html>
+<br>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<br>
+<center><a href="https://www.glitter-graphics.com"><img src="http://dl2.glitter-graphics.net/pub/432/432022s1vheyatjs.gif" width=380 height=41 border=0></a><br></a></center>
+<br>
+<center><a href="https://www.glitter-graphics.com"><img src="http://dl4.glitter-graphics.net/pub/117/117684ygkpzfr3jr.gif" width=160 height=107 border=0></a><br></a></center>
+<center><h2> What Date & Time is Now ? </center></h2>
+</head><div style="text-align:center;padding:1em 0;"> <h3><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/1735161"><span style="color:gray;">Current local time in</span><br />Kuala Lumpur, Malaysia</a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=Asia%2FKuala_Lumpur" width="100%" height="115" frameborder="0" seamless></iframe></div>
+</div>
+<br>
+<script type='text/javascript'>
+// <![CDATA[
+var colour="#FF00E1";
+var sparkles=100;
+
+
+var x=ox=400;
+var y=oy=300;
+var swide=800;
+var shigh=600;
+var sleft=sdown=0;
+var tiny=new Array();
+var star=new Array();
+var starv=new Array();
+var starx=new Array();
+var stary=new Array();
+var tinyx=new Array();
+var tinyy=new Array();
+var tinyv=new Array();
+window.onload=function() { if (document.getElementById) {
+var i, rats, rlef, rdow;
+for (var i=0; i<sparkles; i++) {
+var rats=createDiv(3, 3);
+rats.style.visibility="hidden";
+document.body.appendChild(tiny[i]=rats);
+starv[i]=0;
+tinyv[i]=0;
+var rats=createDiv(5, 5);
+rats.style.backgroundColor="transparent";
+rats.style.visibility="hidden";
+var rlef=createDiv(1, 5);
+var rdow=createDiv(5, 1);
+rats.appendChild(rlef);
+rats.appendChild(rdow);
+rlef.style.top="3px";
+rlef.style.left="0px";
+rdow.style.top="0px";
+rdow.style.left="3px";
+document.body.appendChild(star[i]=rats);
+}
+set_width();
+sparkle();
+}}
+function sparkle() {
+var c;
+if (x!=ox || y!=oy) {
+ox=x;
+oy=y;
+for (c=0; c<sparkles; c++) if (!starv[c]) {
+star[c].style.left=(starx[c]=x)+"px";
+
+
+star[c].style.top=(stary[c]=y)+"px";
+star[c].style.clip="rect(0px, 5px, 5px, 0px)";
+star[c].style.visibility="visible";
+starv[c]=50;
+break;
+}
+}
+for (c=0; c<sparkles; c++) {
+if (starv[c]) update_star(c);
+if (tinyv[c]) update_tiny(c);
+}
+setTimeout("sparkle()", 40);
+}
+function update_star(i) {
+if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
+if (starv[i]) {
+stary[i]+=1+Math.random()*3;
+if (stary[i]<shigh+sdown) {
+star[i].style.top=stary[i]+"px";
+starx[i]+=(i%5-2)/5;
+star[i].style.left=starx[i]+"px";
+}
+else {
+star[i].style.visibility="hidden";
+starv[i]=0;
+return;
+}
+
+
+}
+else {
+tinyv[i]=50;
+tiny[i].style.top=(tinyy[i]=stary[i])+"px";
+tiny[i].style.left=(tinyx[i]=starx[i])+"px";
+tiny[i].style.width="2px";
+tiny[i].style.height="2px";
+star[i].style.visibility="hidden";
+tiny[i].style.visibility="visible"
+}
+}
+function update_tiny(i) {
+if (--tinyv[i]==25) {
+tiny[i].style.width="1px";
+tiny[i].style.height="1px";
+}
+if (tinyv[i]) {
+tinyy[i]+=1+Math.random()*3;
+if (tinyy[i]<shigh+sdown) {
+tiny[i].style.top=tinyy[i]+"px";
+tinyx[i]+=(i%5-2)/5;
+tiny[i].style.left=tinyx[i]+"px";
+}
+else {
+
+
+
+
+tiny[i].style.visibility="hidden";
+tinyv[i]=0;
+return;
+}
+}
+else tiny[i].style.visibility="hidden";
+}
+document.onmousemove=mouse;
+function mouse(e) {
+set_scroll();
+y=(e)?e.pageY:event.y+sdown;
+x=(e)?e.pageX:event.x+sleft;
+}
+function set_scroll() {
+if (typeof(self.pageYOffset)=="number") {
+sdown=self.pageYOffset;
+sleft=self.pageXOffset;
+}
+else if (document.body.scrollTop || document.body.scrollLeft) {
+sdown=document.body.scrollTop;
+sleft=document.body.scrollLeft;
+}
+else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+sleft=document.documentElement.scrollLeft;
+sdown=document.documentElement.scrollTop;
+}
+else {
+sdown=0;
+sleft=0;
+}
+}
+window.onresize=set_width;
+function set_width() {
+if (typeof(self.innerWidth)=="number") {
+swide=self.innerWidth;
+shigh=self.innerHeight;
+}
+else if (document.documentElement && document.documentElement.clientWidth) {
+swide=document.documentElement.clientWidth;
+shigh=document.documentElement.clientHeight;
+}
+else if (document.body.clientWidth) {
+swide=document.body.clientWidth;
+shigh=document.body.clientHeight;
+}
+}
+function createDiv(height, width) {
+var div=document.createElement("div");
+div.style.position="absolute";
+div.style.height=height+"px";
+div.style.width=width+"px";
+div.style.overflow="hidden";
+div.style.backgroundColor=colour;
+return (div);
+}
+// ]]>
+</script>
+<br>
+<br>
+<pre>                                                                                      
+                                                                                                                                                                               <a href="#top"><img src="Image/scroll.png" </a>
+
+</pre>
+<br>
+  <style type="text/css">
+    h5 {
+    font-family: trebuchet-ms, arial, tahoma;
+    font-size: 13px;
+    padding: 0 0 1em;
+    font-weight:bold;
+    color: #000000;
+    }
+    .msg_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    }
+    .msg_head {
+    padding: 5px 10px;
+    cursor: pointer;
+    position: relative;
+    background-color:#F95EA2;
+    margin:1px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    }
+    .msg_body {
+    padding: 5px 10px 15px;
+    background-color:#FFFFFF;
+    }
+    </style>
+    <script type="text/javascript" src="https://sites.google.com/site/jquery01/tabmenuaccordion.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function()
+    {
+    //hide the all of the element with class msg_body
+    $(".msg_body").hide();
+    //slides the element with class "msg_body" when paragraph with class "msg_head" is clicked
+    $("#firstpane h5.msg_head").click(function()
+    {
+    $(this).next("div.msg_body").slideToggle(700).siblings("div.msg_body").slideUp("slow");
+    });
+    //slides the element with class "msg_body" when mouse is over the paragraph
+    $("#secondpane h5.msg_head").mouseover(function()
+    {
+    $(this).next("div.msg_body").slideDown("slow").siblings("div.msg_body").slideUp("slow");
+    });
+    });
+    </script>
+    <div class="msg_list" id="secondpane">
+    <h5 class="msg_head"><center> COPYRIGHT © 2021 </h5></center>
+    <div class="msg_body">
+    <center>
+    <pre> - Zafira Azmy - 
+All Right Reserved 
+Thank You . Please Visit Again
+<br>
+<a href="https://www.glitter-graphics.com"><img src="http://dl10.glitter-graphics.net/pub/1294/1294430j4ozkwci0p.gif" width=97 height=24 border=0></a>
+<br>
+Any Inquiries:
+
+<br>
+<a href="https://www.glitter-graphics.com"><img src="http://dl.glitter-graphics.net/pub/2014/2014301jiew25rxhn.gif" width=51 height=14 border=0></a>
+<a href="mailto: honeyyfiraa@gmail.coms"><img src="Image/email.jpg" alt="Send Email" style="width:70px;height:70px;"></a>
+</div></pre>
+    </div>
+</body>
+</html>
